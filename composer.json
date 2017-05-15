@@ -1,0 +1,15 @@
+{
+  "require":{
+    "illuminate/view": "^5.4",
+    "illuminate/database": "^5.4"
+  },
+  "autoload":{
+    "psr-4":{
+      "App\\": "App/",
+      "E8\\": "E8/"
+    },
+    "files": [
+      "helpers/functions.php"
+    ]
+  }
+}
