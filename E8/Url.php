@@ -21,7 +21,7 @@ class Url
         if($this->urlRootPath == '\\' || $this->urlRootPath == '/'){
             $this->urlRootPath = '';
         }
-        $this->publicPath = $this->urlRootPath.'/'.app(Config::class)->get('app.public_folder');
+        $this->publicPath = $this->urlRootPath;
     }
 
     /**
