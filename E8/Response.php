@@ -1,6 +1,7 @@
 <?php
 
 namespace E8;
+use Illuminate\Contracts\Support\Renderable;
 use Illuminate\View\View;
 
 /**
@@ -24,7 +25,7 @@ class Response
     {
         if(is_string($content)){
             $this->content = $content;
-        }else if($content instanceof View){
+        }else if($content instanceof Renderable){
             $this->content = $content->render();
         }
         $this->headers = $headers;
